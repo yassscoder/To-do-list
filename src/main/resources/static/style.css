@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+}
+.header {
+    background-color: orange;
+    height: 100px;
+}
+.papi {
+    display: flex;
+    flex-direction: column;
+}
+#nuestralistadetareas{
+
+
+}
+#inputs{
+   justify-content: center;
+}
