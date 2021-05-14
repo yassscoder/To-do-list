@@ -3,8 +3,8 @@ const addTask = document.getElementById("addButton");
 addTask.addEventListener("click", addList);
 let inputField = document.getElementById("write");
 
-function addList(event){
-         toDoList.innerHTML = event.target.value;
+function addList(){
+    let cogerElemento = inputField.value;
+    toDoList.innerHTML = cogerElemento;
 }
 
-console.log([toDoList])
