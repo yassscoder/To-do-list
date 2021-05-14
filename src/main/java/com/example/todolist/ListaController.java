@@ -5,24 +5,25 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.view.RedirectView;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @RestController
 
 public class ListaController {
-    private List<Lista> listas;
+    private List<Tarea> listas;
 
     public ListaController(){
         listas = new ArrayList<>();
     }
     @GetMapping("/tareas")
-    public List<Lista> allTask(){
+    public List<Tarea> allTask(){
         return listas;
     }
     @PostMapping("/tareas")
-    public RedirectView addNewTask(Lista lista){
-        lista.add(lista);
+    public RedirectView addNewTask(Tarea lista){
+        listas.add(lista);
         return new RedirectView("/");
     }
 }

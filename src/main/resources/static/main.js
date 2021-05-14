@@ -4,7 +4,7 @@ addTask.addEventListener("click", addList);
 let inputField = document.getElementById("write");
 
 function addList(){
-    let cogerElemento = inputField.value;
-    toDoList.innerHTML = cogerElemento;
+    let tareas = inputField.value;
+    toDoList.innerHTML = tareas;
 }
 

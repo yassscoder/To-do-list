@@ -1,9 +1,9 @@
 package com.example.todolist;
 
-public class Lista {
+public class Tarea {
    private final String tareas;
 
-   public lista(String tareas){
+   public Tarea (String tareas){
        this.tareas = tareas;
 
    }
