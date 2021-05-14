@@ -1,0 +1,17 @@
+body{
+    margin:0;
+
+}
+header {
+    background-color: orange;
+    height: 50px;
+}
+form{
+    background-color: #e5e6e8;
+    height: 40px;
+}
+#add{
+    background-color: orange;
+    color: white;
+    border-radius: 80px;
+}

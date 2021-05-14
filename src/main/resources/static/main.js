@@ -1,10 +1,10 @@
-let listaElementos = ["proebas lista"];
+const toDoList = document.getElementById("todo-list");
+const addTask = document.getElementById("addButton");
+addTask.addEventListener("click", addList);
+let inputField = document.getElementById("write");
 
-
-function addElement (){
-    mostrarLista.innerHTML = listaElementos["hola"];
-    const mostrarLista = document.querySelector("#nuestralistadetareas");
+function addList(event){
+         toDoList.innerHTML = event.target.value;
 }
-function deleteElement(){
 
-}
+console.log([toDoList])
