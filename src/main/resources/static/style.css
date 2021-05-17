@@ -4,18 +4,37 @@ body{
 }
 header {
     background-color: orange;
-    height: 50px;
+    height: 22vh;
+    box-shadow: 10px 5px 5px lightgrey;
 }
 
 #wrapper {
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 form{
     background-color: #e5e6e8;
-    height: 40px;
+    height: 9em;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
 }
-#add{
+#write{
+    width: 90%;
+    height: 6em;
+    border:none;
+    border-radius: 20px;
+
+}
+#addButton{
     background-color: orange;
     color: white;
-    border-radius: 80px;
+    border-radius: 55%;
+    border:none;
+    height:5em;
+    font-weight: bold;
 }
