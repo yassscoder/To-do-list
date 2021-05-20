@@ -1,9 +1,9 @@
 package com.example.todolist.models;
 
 public class Task {
-   private String task;
+   private final String task;
 
-   public Task (String tasks){
+   public Task (String task){
        this.task = task;
    }
 

@@ -15,12 +15,12 @@ public class BlockController {
     public List<Task> blocks = new ArrayList<>();
 
     @GetMapping("/blocks")
-    public List<Task> addBlock() {return blocks;}
+    public List<Task> allBlocks() {return blocks;}
 
 
     @PostMapping("/blocks")
-    public void addBlock(Task task) {
-        blocks.add(task);
+    public void addBlock(Task added_task) {
+        blocks.add(added_task);
     }
 
 /*System.out.println(blocks)*/
