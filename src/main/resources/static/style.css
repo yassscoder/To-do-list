@@ -4,28 +4,36 @@ body{
 }
 header {
     background-color: orange;
-    height: 22vh;
+    height: 13.5vh;
     box-shadow: 10px 5px 5px lightgrey;
 }
 
 #wrapper {
-    height: 100vh;
+    height: 86.5vh;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
 
 }
+#todo-list{
+    height: 80vh;
+    display: flex;
+    flex-direction:column;
+
+}
 form{
     background-color: #e5e6e8;
-    height: 9em;
+    height: 14em;
     width:100%;
     display: flex;
     align-items: center;
     justify-content:space-evenly;
+
 }
-#write{
+#name{
     width: 90%;
-    height: 6em;
+    height: 2.5em;
+    font-size: 3em;
     border:none;
     border-radius: 20px;
 
@@ -37,4 +45,7 @@ form{
     border:none;
     height:5em;
     font-weight: bold;
+}
+.task{
+    font-size: 50px;
 }
