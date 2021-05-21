@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.view.RedirectView;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,10 +20,12 @@ public class BlockController {
 
 
     @PostMapping("/blocks")
-    public void addBlock(Task added_task) {
+    public RedirectView addBlock(Task added_task){
         blocks.add(added_task);
+        return  new RedirectView("/");
+
     }
 
-/*System.out.println(blocks)*/
+
 }
 

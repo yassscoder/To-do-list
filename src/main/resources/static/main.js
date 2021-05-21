@@ -1,33 +1,28 @@
-const toDoList = document.getElementById("todo-list");
-const addTask = document.getElementById("addButton");
-let inputField = document.getElementById("write");
 
-//function addList(){
 
 //    toDoList.innerHTML = tareas;
-
 //}
-
 //addTask.addEventListener("click", addList);
 //let tareas = inputField.value;
-const moviesSection = document.querySelector("#movies-section");
-function showTask(list) {
-    Section.innerHTML = "";
-    movies.forEach((movie, position) => {
-        const htmlElement = document.createElement("div");
-        htmlElement.innerHTML = `<div class="movie">
-            <div 
-                class="close-button" 
-                onclick="fetch(\`/movies/${position}\`, { method: 'DELETE'}).then(reloadMovies)">x</div>
-            <p class="title">${movie.title} (${movie.year})</p>
-        </div>`;
-        moviesSection.appendChild(htmlElement)
+
+//${task.write_task}
+const toDoList = document.getElementById("todo-list");
+
+function showTasks(tasks) {
+    toDoList.innerHTML="";
+    tasks.forEach(task => {    //task,position later
+        const new_div= document.createElement("div");
+        new_div.innerHTML = `<div class="task">
+                
+              <p class="task_name">${task.task_name}</p>
+           </div>`;
+
+        toDoList.appendChild(new_div)
+
+    
     })
 }
 
-
-
-}
 let reloadTasks = () =>{
     fetch("/blocks")
         .then(r => r.json())
