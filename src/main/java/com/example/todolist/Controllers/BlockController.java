@@ -13,7 +13,9 @@ import java.util.List;
 @RestController
 public class BlockController {
 
-    public List<Task> blocks = new ArrayList<>();
+    private List<Task> blocks;
+
+    public BlockController() {blocks = new ArrayList<>();}
 
     @GetMapping("/blocks")
     public List<Task> allBlocks() {return blocks;}

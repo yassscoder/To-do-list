@@ -14,7 +14,7 @@ function showTasks(tasks) {
         const new_div= document.createElement("div");
         new_div.innerHTML = `<div class="task">
                 
-              <p class="task_name">${task.task_name}</p>
+              <p class="task_name">${task.name}</p>
            </div>`;
 
         toDoList.appendChild(new_div)

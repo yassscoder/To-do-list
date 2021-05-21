@@ -1,13 +1,13 @@
 package com.example.todolist.models;
 
 public class Task {
-   private final String task_name;
+   private final String name;
 
-   public Task (String task_name){
-       this.task_name = task_name;
+   public Task (String name){
+       this.name = name;
    }
 
-    public String getTask() {
-        return task_name;
+    public String getName() {
+        return name;
     }
 }
