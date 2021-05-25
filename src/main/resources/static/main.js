@@ -18,7 +18,7 @@ function showTasks(tasks) {
             new_div.innerHTML = `<div class="task">
                 <div 
                 class="close-button" 
-                onclick="fetch(\` /tasks/${position}\`,
+                onclick="fetch(\` /blocks/${position}\`,
                 { method: 'DELETE'}).then(reloadTasks)"><div class="movie__button"></div></div>
               <p class="task_name">${task.name}</p>
            </div>`;
