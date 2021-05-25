@@ -12,11 +12,14 @@ const btn =document.getElementById("addButton");
 function showTasks(tasks) {
     toDoList.innerHTML="";
 
-    tasks.forEach(task => {    //task,position later
+    tasks.forEach((task, position) => {
         if (task.name.length>2) {
             const new_div = document.createElement("div");
             new_div.innerHTML = `<div class="task">
-                
+                <div 
+                class="close-button" 
+                onclick="fetch(\` /tasks/${position}\`,
+                { method: 'DELETE'}).then(reloadTasks)"><div class="movie__button"></div></div>
               <p class="task_name">${task.name}</p>
            </div>`;
 
