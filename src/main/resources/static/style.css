@@ -10,6 +10,16 @@ header {
     justify-content: flex-end;
     align-items: center;
 }
+#completed{
+    justify-content: flex-start;
+    align-items: center;
+    gap:5em;
+
+}
+p{font-size: 46px;
+    color: #ffdac6;
+}
+.fa-arrow-left{margin-left: 100px;}
 
 #wrapper {
     height: 87.5vh;
