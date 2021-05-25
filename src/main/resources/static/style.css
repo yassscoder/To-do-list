@@ -3,26 +3,46 @@ body{
 
 }
 header {
-    background-color: orange;
-    height: 13.5vh;
+    background-color: #fe7f2d;
+    height: 12.5vh;
     box-shadow: 10px 5px 5px lightgrey;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 #wrapper {
-    height: 86.5vh;
+    height: 87.5vh;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
+
 #todo-list{
-    height: 80vh;
+    height: 105vh;
     display: flex;
     flex-direction:column;
+    margin-left: 3rem;
+    margin-right:3rem;
+    overflow-y: auto;
+}
+#icons{
+    margin-right: 3.5em;
+    display: flex;
+    gap:3.5em;
+}
+
+.fas{
+    font-size: 6.8em;
+    color: #ffdac6;
+    cursor: pointer;
 
 }
+.fa-tasks{
+    font-size: 7em;
+}
 form{
-    background-color: #e5e6e8;
+    background-color: #fafbfb;
     height: 14em;
     width:100%;
     display: flex;
@@ -31,7 +51,7 @@ form{
 
 }
 #name{
-    width: 90%;
+    width: 80%;
     height: 2.5em;
     font-size: 3em;
     border:none;
@@ -39,13 +59,15 @@ form{
 
 }
 #addButton{
-    background-color: orange;
+    background-color: #fcbf49;
     color: white;
     border-radius: 55%;
     border:none;
-    height:5em;
-    font-weight: bold;
+    height:1.3em;
+    width: 1.3em;
+    font-size:80px;
+    align-content: center;
 }
 .task{
-    font-size: 50px;
+    font-size: 3.5em;
 }

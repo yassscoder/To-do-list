@@ -7,17 +7,26 @@
 
 //${task.write_task}
 const toDoList = document.getElementById("todo-list");
+const btn =document.getElementById("addButton");
 
 function showTasks(tasks) {
     toDoList.innerHTML="";
+
     tasks.forEach(task => {    //task,position later
-        const new_div= document.createElement("div");
-        new_div.innerHTML = `<div class="task">
+        if (task.name.length>2) {
+            const new_div = document.createElement("div");
+            new_div.innerHTML = `<div class="task">
                 
               <p class="task_name">${task.name}</p>
            </div>`;
 
-        toDoList.appendChild(new_div)
+            toDoList.appendChild(new_div)
+        }
+        else {
+            //alert( "Has de poner al menos 3 caracteres" );
+            //             document.myForm.Name.focus() ;
+            //             return false; poner en html name
+        }
 
     
     })
