@@ -5,23 +5,26 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.view.RedirectView;
 
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 @RestController
 public class BlockController {
 
-    private final List<Task> blocks;
+    private Map<Integer,Task> blocks;
+    private Integer counter = 0;
 
-    public BlockController() {blocks = new ArrayList<>();}
+
+    public BlockController() {blocks = new HashMap<>();}
+
 
     @GetMapping("/blocks")
-    public List<Task> allBlocks() {return blocks;}
+    public Map<Integer,Task> allBlocks() {return blocks;}
 
 
     @PostMapping("/blocks")
     public RedirectView addBlock(Task added_task){
-        blocks.add(added_task);
+        blocks.put(counter++,added_task);
         return  new RedirectView("/");
 
     }
