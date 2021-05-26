@@ -26,9 +26,7 @@ function showTasks(tasks) {
             toDoList.appendChild(new_div)
         }
         else {
-            //alert( "Has de poner al menos 3 caracteres" );
-            //             document.myForm.Name.focus() ;
-            //             return false; poner en html name
+                //alert("Has de poner al menos 3 caracteres");
         }
 
     

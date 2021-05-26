@@ -16,7 +16,7 @@ header {
     gap:5em;
 
 }
-p{font-size: 46px;
+#title-completed{font-size: 4em;
     color: #ffdac6;
 }
 .fa-arrow-left{margin-left: 100px;}

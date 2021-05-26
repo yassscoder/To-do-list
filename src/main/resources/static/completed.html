@@ -9,12 +9,19 @@
 <body>
     <header id="completed">
         <i class="fas fa-arrow-left"></i>
-        <p>Completed items</p>
+        <p id="title-completed">Completed items</p>
     </header>
-    <div id="wrapper_2">
+    <div id="wrapper">
         <section id="todo-list">
 
         </section>
+
+        <form action="/blocks" name="myForm" method="post">
+            <label for="name"></label>
+            <input type="text" id="name" placeholder="I want to..." name="name"/>
+            <input type="submit" id="addButton" value="+" name="btn_submit">
+        </form>
     </div>
+
 </body>
 </html>
