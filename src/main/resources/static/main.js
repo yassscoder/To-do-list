@@ -25,12 +25,13 @@ function validation() {
     if (inputField.length>2){
         btn.disabled = false;
     }
+
     else {
         btn.disabled = true;
 
     }
 }
-addedTask.addEventListener("change", validation);
+addedTask.addEventListener("input", validation);
 //se puede usar "input"/"change"
 
 let reloadTasks = () =>{
